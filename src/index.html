@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icons/user.svg">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="shadow-lg">
+        <div class="px-5">
+            <nav class="nav flex items-center justify-between font-semibold text-[24px] h-[94px]">
+                <a href="#">
+                    <img title="Back home" src="./assets/icons/back.svg" alt="back">
+                </a>
+                <div class="flex items-center gap-x-3">
+                    <img title="Logo" src="./assets/icons/logo.svg" alt="logo">
+                    <h4>Admin Dashboard</h4>
+                </div>
+                <div class="flex gap-x-3 text-[#9083D5]">
+                    <img src="./assets/icons/user.svg" alt="user">
+                    <p>Admin</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <div class="flex">
+                <aside class="bg-[#9083D5] w-[20%] p-5  flex flex-col justify-between">
+                    <ul class="font-bold text-[24px] text-white flex flex-col gap-y-2">
+                        <li class="change-btn hover:text-black duration-300"><a class="flex items-center gap-x-2" href="#"><i class='bx bxs-dashboard text-[20px] text-black hover:text-white'></i> Dashboard</a></li>
+                        <li class="change-btn hover:text-black duration-300"><a class="flex items-center gap-x-2" href="#"><i class='bx bxs-clinic text-[20px] text-black'></i> Clinics</a></li>
+                        <li class="change-btn hover:text-black duration-300"><a class="flex items-center gap-x-2" href="#"><i class='bx bxs-injection text-black'></i> Doctors</a></li>
+                        <li class="change-btn hover:text-black duration-300"><a class="flex items-center gap-x-2" href="#"><i class='bx bx-list-ul text-black'></i> Services</a></li>
+                        <li class="change-btn hover:text-black duration-300"><a class="flex items-center gap-x-2" href="#"><i class='bx bxs-user text-[20px] text-black'></i> Users</a></li>
+                    </ul>
+                </aside>
+                <div class="w-[80%] p-5 bg-gray-200">
+                    <div class="tab-item  w-full h-full">
+                        <div class="flex justify-between cursor-pointer">
+                            <div class="shadow-lg flex items-center justify-center gap-x-5 w-[226px] h-[113px] bg-white rounded-[15px]">
+                                <img src="./assets/icons/dashboard/patient.svg" alt="patient">
+                                <div>
+                                    <h4 class="font-semibold text-[18px]">Total Patient</h4>
+                                    <p class="font-medium text-[18px]">20</p>
+                                </div>
+                            </div>
+                            <div class="shadow-lg flex items-center justify-center gap-x-5 w-[226px] h-[113px] bg-white rounded-[15px]">
+                                <img src="./assets/icons/dashboard/doctors.svg" alt="doctors">
+                                <div>
+                                    <h4 class="font-semibold text-[18px]">Total Doctors</h4>
+                                    <p class="font-medium text-[18px]">20</p>
+                                </div>
+                            </div>
+                            <div class="shadow-lg flex items-center justify-center gap-x-5 w-[226px] h-[113px] bg-white rounded-[15px]">
+                                <img src="./assets/icons/dashboard/home.svg" alt="home">
+                                <div>
+                                    <h4 class="font-semibold text-[18px]">Total Services</h4>
+                                    <p class="font-medium text-[18px]">20</p>
+                                </div>
+                            </div>
+                            <div class="shadow-lg flex items-center justify-center gap-x-5 w-[226px] h-[113px] bg-white rounded-[15px]">
+                                <img src="./assets/icons/dashboard/hospital.svg" alt="hospital">
+                                <div>
+                                    <h4 class="font-semibold text-[18px]">Total Hospital</h4>
+                                    <p class="font-medium text-[18px]">20</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item">
+                        <h1>Clinics</h1>
+                    </div>
+                    <div class="tab-item">
+                        <h1>Doctors</h1>
+                    </div>
+                    <div class="tab-item">
+                        <h1>Services</h1>
+                    </div>
+                    <div class="tab-item">
+                        <h1>Users</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- JS scripts -->
+<script src="./js/utils.js"></script>
+<script src="./js/script.js"></script>
+</html>
